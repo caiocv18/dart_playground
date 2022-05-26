@@ -62,24 +62,24 @@ class Class2 {
     bool isEngaged = false;
 
     print("What's your name?\n");
-    String? name = stdin.readLineSync();
+    String name = stdin.readLineSync();
 
     print("What's your age?\n");
-    String? responseAge = stdin.readLineSync();
-    int age = int.parse(responseAge!);
+    String responseAge = stdin.readLineSync();
+    int age = int.parse(responseAge);
 
     print("What's your height?\n");
-    String? responseHeight = stdin.readLineSync();
-    double height = double.parse(responseHeight!);
+    String responseHeight = stdin.readLineSync();
+    double height = double.parse(responseHeight);
 
     print("Are you engaged?(Y/S)\n");
-    String? response = stdin.readLineSync();
+    String response = stdin.readLineSync();
     if (response?.toUpperCase() == "Y") {
       isEngaged = true;
     }
 
     print("What's your bride's name?(Y/S)\n");
-    String? bridesName = stdin.readLineSync();
+    String bridesName = stdin.readLineSync();
 
     int bornDate = 2022 - age;
     print("Your name is $name.\n"

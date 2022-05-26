@@ -3,7 +3,7 @@ import 'dart:io';
 class Class3 {
   void listExercise() {
     List names = [];
-    String? contineButton = "";
+    String contineButton = "";
     do {
       print("Add a name for your team:");
       names.add(stdin.readLineSync());
