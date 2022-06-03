@@ -7,5 +7,17 @@ void main(List<String> args) {
   //dynamicList();
   //Class4().checkAdult();
   //Class4().multiplicationTable(9);
-  Class4().inputPhoneNumber();
+  //Class4().inputPhoneNumber();
+  List<String> array = [
+    "Caio",
+    "Vinicius",
+    "Cesar",
+    "da",
+    "Silva",
+    "Iara",
+    "Alves",
+    "da",
+    "Costa"
+  ];
+  Class4().arrayMethods(array);
 }

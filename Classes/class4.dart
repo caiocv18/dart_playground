@@ -36,4 +36,27 @@ class Class4 {
     phoneNumber = int.parse(response);
     print(phoneNumber);
   }
+
+  void arrayMethods(List array) {
+    print("==========FOREACH==========");
+    array.forEach((element) => print(element));
+
+    print("============MAP============");
+    List mapArray = array.map((e) => "Map - $e").toList();
+    print(mapArray);
+
+    print("==========CONTAINS=========");
+    print(array.contains("Iara"));
+
+    print("============SORT===========");
+    array.sort();
+    print(array);
+
+    print("===========REDUCE==========");
+    List numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    int sumOfPairs = numbers
+        .map((e) => e % 2 == 0 ? e : 0)
+        .reduce((value, element) => value + element);
+    print(sumOfPairs);
+  }
 }
